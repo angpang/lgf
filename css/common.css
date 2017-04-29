@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'iconfont';  /* project id 211389 */
-    src: url('//at.alicdn.com/t/font_aaqdmaxgrjft7qfr.eot');
-    src: url('//at.alicdn.com/t/font_aaqdmaxgrjft7qfr.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_aaqdmaxgrjft7qfr.woff') format('woff'),
-    url('//at.alicdn.com/t/font_aaqdmaxgrjft7qfr.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_aaqdmaxgrjft7qfr.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_90qalc27hw7b9.eot');
+    src: url('//at.alicdn.com/t/font_90qalc27hw7b9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_90qalc27hw7b9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_90qalc27hw7b9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_90qalc27hw7b9.svg#iconfont') format('svg');
 }
 .iconfont{font-family:"iconfont";
     font-size:16px;font-style:normal;}
@@ -45,7 +45,7 @@ body{
 header{
     background: #fff;
     width:100%;
-    border:red solid 1px;
+    border-bottom:#e6e6e6 solid 1px;
     line-height:2rem;
 }
 header .logo{
