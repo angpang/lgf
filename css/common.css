@@ -19,6 +19,10 @@
 .no_mar{
     margin: 0px;
 }
+.mt_5{
+    margin-top:0.5rem;
+}
+
 .no_pad{
     padding:0px;
 }
@@ -26,11 +30,18 @@
     padding-top:0px;
 }
 
+.bold{
+    font-weight:bold;
+    font-weight:bold;
+}
+
 body{
     margin:0px;
     padding:0px;
     background: #f6f6f6;
+    font-family: 微软雅黑;
 }
+
 header{
     background: #fff;
     width:100%;
