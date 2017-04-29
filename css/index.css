@@ -1,0 +1,29 @@
+.swiper_height{
+    height:10rem;
+    line-height:10rem;
+}
+.panel_list{
+    background: #fff;
+    height:6rem;
+    line-height: 1.2rem;
+    border:red solid 1px;
+ }
+.panel_list h4{
+    color:#1a1a1a;
+}
+.panel_list_img{
+    line-height: 4rem;
+}
+.love_product{
+    background: #fff;
+    height: auto;
+}
+.love_product .title{
+    border-bottom:#e6e6e6 solid 1px;
+}
+.huan{
+    border-radius: 1rem;
+    border:#919191 solid 1px;
+    padding:0 0.5rem;
+}
+
