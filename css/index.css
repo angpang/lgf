@@ -6,7 +6,6 @@
     background: #fff;
     height:6rem;
     line-height: 1.2rem;
-    border:red solid 1px;
  }
 .panel_list h4{
     color:#1a1a1a;
@@ -14,16 +13,108 @@
 .panel_list_img{
     line-height: 4.5rem;
 }
-.love_product{
+.love_product, .paihang{
     background: #fff;
     height: auto;
 }
-.love_product .title{
+.title{
     border-bottom:#e6e6e6 solid 1px;
+    height:3.6rem;
 }
 .huan{
     border-radius: 1rem;
     border:#919191 solid 1px;
     padding:0 0.5rem;
+    margin-top: 0.5rem;
 }
-
+.jiaobiao{
+    margin-top:-0.6rem;
+    margin-left: -0.9rem;
+}
+.tab_list li{
+    margin-left: 0px !important;
+    float:left;
+    width:25%;
+    font-size:0.9rem;
+    color:#919191;
+}
+.active{
+    color:#1a1a1a !important;
+}
+.bg1, .bg2, .bg3, .bg4{
+    height:12.5rem;
+    background-size:100%;
+}
+.bg1{
+     background: url("../images/index/remen_pic1.png") center center no-repeat;
+ }
+.bg2{
+    background: url("../images/index/remen_pic2.png") center center no-repeat;
+}
+.bg3{
+    background: url("../images/index/remen_pic3.png") center center no-repeat;
+}
+.bg4{
+    background: url("../images/index/remen_pic4.png") center center no-repeat;
+}
+.re_info{
+    background: -webkit-linear-gradient(top, #000000, #7e7e82);
+    opacity: 0.8;
+    margin-top:-0rem;
+    line-height: 1rem;
+    padding:0.2rem 0rem;
+}
+.re_info h6{
+    color:yellow;
+    opacity: 1;
+}
+.re_info p{
+     color:white;
+ }
+.re_info p span{
+    font-size:2rem;
+}
+.md_info{
+    color:white;
+    width:80%;
+    margin-left:2rem;
+}
+.md_info h3{
+    margin-top:3rem;
+    margin-left:2rm;
+    border-bottom: #fff solid 1px;
+    height:2.8rem;
+}
+.bt_info{
+    position: absolute;
+    buttom: 0px;
+    top: 8.5rem;
+}
+.yuan{
+    width:3rem;
+    height:3rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+    font-size:2rem;
+    float:left;
+    margin-left:0.5rem;
+}
+.zhe{
+    color:#fff;
+    background: #ff3939;
+}
+.shi{
+    color:#fff;
+    background: #68a52c;
+}
+.can_img{
+    width:35%;
+    margin-top:-0.4rem;
+}
+.can_youhui{
+    color:#ff3939
+}
+.panel_name{
+    color:#000;
+    font-size:1.7rem;
+}

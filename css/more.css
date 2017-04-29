@@ -1,0 +1,22 @@
+.sec_left, .sec_right{
+    min-height:52rem;
+}
+.sec_left{
+    background: #f6f6f6;
+}
+.sec_right{
+    background: #fff;
+}
+.list-group a{
+    padding:1.2rem;
+    border:none;
+    background: #f6f6f6;
+}
+.list-group .select{
+    background: url("../images/more/red_icon.png") left center no-repeat;
+    background-size: 4%;
+    background-color: #fff;
+    font-weight: bold;
+    color:#000;
+    font-size:1.7rem;
+}

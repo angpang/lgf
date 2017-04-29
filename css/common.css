@@ -23,6 +23,10 @@
     margin-top:0.5rem;
 }
 
+.f_8{
+    font-size:0.8rem;
+}
+
 .no_pad{
     padding:0px;
 }
@@ -45,11 +49,19 @@ body{
 header{
     background: #fff;
     width:100%;
-    border-bottom:#e6e6e6 solid 1px;
     line-height:2rem;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:9;
+    padding:0.4rem 0rem;
+    border-bottom: #e6e6e6 solid 1px;
 }
 header .logo{
     background: url("../images/common/logo.jpg") center center no-repeat;
     background-size:65%;
+}
+.sec_con{
+    margin-top:4rem;
 }
 
