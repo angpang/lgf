@@ -1,5 +1,5 @@
 .sec_pa{
-    padding-top:1rem;
+    padding-top:1.5rem;
 }
 .panel-wd{
     width:90%;
@@ -17,4 +17,31 @@
 }
 .co-title{
     font-size:2rem;
+}
+.co-sy{
+    font-size:1.5rem;
+    color:#6e6e6e;
+    /*padding-top:-3rem;*/
+}
+.co-m{
+    margin-left:1rem;
+}
+.co-left{
+    margin-top:.8rem;
+}
+.co-li{
+    border-bottom:#e6e6e6 dotted 1px;
+}
+.co-f{
+    color:#919191;
+    margin-top:.5rem;
+}
+.panel-body{
+    padding-bottom:0rem;
+}
+.sec-j{
+    margin-top:.5rem;
+}
+.co-ps{
+    padding-left:2rem;
 }
