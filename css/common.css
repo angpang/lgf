@@ -149,7 +149,7 @@ header .pad_center{
     color: #fff;
 }
 .btn_position{
-    position: fixed;bottom:0px; width: 100%;
+    position: fixed;bottom:0px; width: 100%;z-index:999;
 }
 .layer{
     position: absolute;
