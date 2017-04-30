@@ -3,7 +3,7 @@
     bottom:3rem;
 }
 .res_btn1{
-    position: absolute;
+    position: fixed;
     bottom:0rem;
     padding:0px !important;
 }

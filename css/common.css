@@ -35,6 +35,10 @@ img{
 .no_pad{
     padding:0px !important;
 }
+.no_pad_tb{
+    padding-top:0px !important;;
+    padding-bottom: 0px !important;
+}
 .no_pad_t{
     padding-top:0px;
 }
@@ -92,9 +96,12 @@ img{
 .lh2{
     line-height: 2rem;
 }
+.lh2_5{
+    line-height: 2.5rem;
+}
 
-.border_b{
-    border-bottom:#919191 solid 1px;
+.border_b{919191
+    border-bottom:# solid 1px;
 }
 .e6{
     border-bottom: #e6e6e6 solid 1px;
