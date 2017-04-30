@@ -44,3 +44,5 @@ ehthumbs.db
 ###################
 .sass-cache
 *.css.map
+
+.idea

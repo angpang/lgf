@@ -1,14 +1,18 @@
 @font-face {
     font-family: 'iconfont';  /* project id 211389 */
-    src: url('//at.alicdn.com/t/font_90qalc27hw7b9.eot');
-    src: url('//at.alicdn.com/t/font_90qalc27hw7b9.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_90qalc27hw7b9.woff') format('woff'),
-    url('//at.alicdn.com/t/font_90qalc27hw7b9.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_90qalc27hw7b9.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_3hyjumdlvkv86w29.eot');
+    src: url('//at.alicdn.com/t/font_3hyjumdlvkv86w29.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_3hyjumdlvkv86w29.woff') format('woff'),
+    url('//at.alicdn.com/t/font_3hyjumdlvkv86w29.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_3hyjumdlvkv86w29.svg#iconfont') format('svg');
 }
-.iconfont{font-family:"iconfont";
-    font-size:16px;font-style:normal;}
-
+.iconfont{
+    font-family:"iconfont";
+    font-size:16px;font-style:normal;
+}
+img{
+    width:100%;
+}
 .row{
     margin:0px;
 }
@@ -28,7 +32,7 @@
 }
 
 .no_pad{
-    padding:0px;
+    padding:0px !important;
 }
 .no_pad_t{
     padding-top:0px;
@@ -36,7 +40,30 @@
 
 .bold{
     font-weight:bold;
+}
+.title_bold{
     font-weight:bold;
+    font-size:1.8rem;
+}
+
+.w80{
+    width:80%;
+}
+.w90{
+    width:90%;
+}
+
+.bg_fff{
+    background: #fff !important;
+}
+.white{
+    color:white;
+}
+.red{
+    color:#ff3939;
+}
+.black{
+    color:#1a1a1a;
 }
 
 body{
@@ -61,7 +88,33 @@ header .logo{
     background: url("../images/common/logo.jpg") center center no-repeat;
     background-size:65%;
 }
+header .pad_center{
+    padding-left:8rem;
+    font-size:1.6rem;
+}
 .sec_con{
     margin-top:4rem;
 }
-
+.btn_active{
+    background-color: #ff3939;
+    border-radius: 0px;
+    color: #fff;
+}
+.btn_no_active{
+    background-color: #919191;
+    border-radius: 0px;
+    color: #fff;
+}
+.btn_active:hover{
+    background-color: #ff3939;
+    border-radius: 0px;
+    color: #fff;
+}
+.btn_no_active:hover{
+    background-color: #919191;
+    border-radius: 0px;
+    color: #fff;
+}
+.btn_position{
+    position: absolute;bottom:0px; width: 100%;
+}
