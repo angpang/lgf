@@ -20,8 +20,8 @@
 .circle{
     width:0.6rem;height: 0.6rem;border-radius: 1rem;margin-top: 1.1rem;
 }
-.c_red{
-    background: #ff3939;
+.c_red{    background: #ff3939;
+
 }
 .c_green{
     background: #00a0e9;

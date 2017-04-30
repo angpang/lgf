@@ -1,3 +1,27 @@
 .min_font{
     font-size: 1rem;
 }
+.squre{
+    width:2rem;
+    height:2rem;
+    border:red solid 1px;
+    line-height: 2rem;
+    border:#919191 solid 1px;
+}
+.squre:active{
+    background-color: #7e7e82;
+}
+.r2{
+    height:4rem;
+    line-height: 3rem;
+}
+.car2 .panel {
+    border:none;
+}
+.car2 .panel-body{
+    padding-bottom: 0px;
+    padding-top:0px;
+}
+.heji{
+    line-height: 3.8rem;height: 3.8rem;color:#ff3939;text-align:left;padding:0px;margin:0px; padding-left: 2rem;font-size:1.6rem;
+}
