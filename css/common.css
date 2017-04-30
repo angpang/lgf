@@ -37,6 +37,9 @@ img{
 .no_pad_t{
     padding-top:0px;
 }
+.pad_1_5{
+    padding-left:1.5rem;
+}
 
 .bold{
     font-weight:bold;
@@ -145,7 +148,7 @@ header .pad_center{
     color: #fff;
 }
 .btn_position{
-    position: absolute;bottom:0px; width: 100%;
+    position: fixed;bottom:0px; width: 100%;
 }
 .layer{
     position: absolute;
