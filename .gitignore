@@ -45,6 +45,6 @@ ehthumbs.db
 .sass-cache
 *.css.map
 
-.idea
+ls
 .idea/*
 .workspace.xml
