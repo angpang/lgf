@@ -1,0 +1,20 @@
+.sec_pa{
+    padding-top:1rem;
+}
+.panel-wd{
+    width:90%;
+    margin:0 auto;
+}
+.co-h{
+    margin-top: -3rem;
+    margin-left: 3.5rem;
+    color:#ff3939;
+}
+.co-s{
+    line-height:3rem;
+    margin-left:2rem;
+    color:#ff3939;
+}
+.co-title{
+    font-size:2rem;
+}
