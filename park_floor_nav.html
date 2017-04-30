@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>停车场楼层导航</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reserved.css">
+    <link rel="stylesheet" href="css/park_nav.css">
+    <link rel="stylesheet" href="css/park_floor_nav.css">
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<header>
+    <div class="row">
+        <div class="col-xs-2 text-center">
+            <i class="iconfont">&#xe603;</i>
+        </div>
+        <div class="col-xs-7 pad_center title_bold">停车场楼层导航</div>
+        <div class="col-xs-3 text-center"></div>
+    </div>
+</header>
+<section class="sec_con">
+    <div class="row">
+        <div class="col-xs-12 text-center"style="padding: 0px;">
+            <!--百度地图容器-->
+            <div style="width:100%;height:50rem;border:#ccc solid 1px;" id="dituContent"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center res_block no_pad" style="box-shadow: 0px 0px 6px #b4b3b1;">
+            <div class="panel panel-default center-block in_info">
+                <div class="panel-heading bg_fff">
+                    <span class="panel-title bold">停车场A区1层A100车位</span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <div class="circle c_green"></div>
+                        </div>
+                        <div class="col-xs-11">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入地址" value="A区1层入口">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <div class="circle c_red"></div>
+                        </div>
+                        <div class="col-xs-11">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="你要去哪里?" value="A区1层A100车位">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 res_btn1">
+            <button type="button" class="btn btn-default btn-lg btn-block btn_active">开始导航</button>
+        </div>
+
+    </div>
+</section>
+<footer>
+
+</footer>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.066112,22.548515);//定义一个中心点坐标
+        map.centerAndZoom(point,12);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_RIGHT,type:BMAP_NAVIGATION_CONTROL_SMALL});
+        map.addControl(ctrl_nav);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
+</script>
+
+</body>
+</html>
