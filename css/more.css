@@ -12,14 +12,14 @@
     border:none;
     background: #f6f6f6;
 }
-.list-group .select{
-    background: url("../images/more/red_icon.png") left center no-repeat;
-    background-size: 4%;
-    background-color: #fff;
-    font-weight: bold;
-    color:#000;
-    font-size:1.7rem;
-}
+.select{
+     background: url("../images/more/red_icon.png") left center no-repeat !important;
+     background-size: 4% !important;
+     background-color: #fff !important;
+     font-weight: bold;
+     color:#000;
+     font-size:1.7rem;
+ }
 .panel-body img{
     width: 100%;
 }

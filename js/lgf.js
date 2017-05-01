@@ -12,7 +12,6 @@ $(document).ready(function(){
         '#reserved':'reserved_no_input',
         '#flashsale':'flashsale',
         '#more':'more',
-        '#huan':'cb:huan',
         '.pDetail':'product',
         '#reservedInput':'reserved_input',
         '#reservedInput2':'reserved_info',
@@ -29,11 +28,18 @@ $(document).ready(function(){
         '#orderSucc':'order_sucessful_food',
         '#daohang':'park_nav',
         '#toFloor':'park_floor_nav',
-        '#startDh':'cb:startDh',
         '#buyDate':'park_car_date',
         '#cancelDate':'park_car_buy',
         '#confirmDate':'park_car_buy',
-        '#toFlashsale':'flashsale'
+        '#toFlashsale':'flashsale',
+        '#startDh':'cb:startDh',
+        '#huan':'cb:huan',
+        "#cancelSearch":"cb:cSearch",
+        "#clearSearch":"cb:clearSearch",
+        "#deleteNum":"cb:deleteNum",
+        "#addNum":"cb:addNum",
+        "#forget":"cb:forget",
+        "#register":"cb:register"
     }
 
     var method = {
@@ -51,7 +57,34 @@ $(document).ready(function(){
         },
         startDh:function(){
             alert('已经触发开始导航事件');
+        },
+        cSearch:function(){
+            $('#searchInput').val('');
+        },
+        clearSearch: function(){
+            $('#searchList').hide();
+        },
+        deleteNum: function(){
+            var num = Number($('#showNum').text());
+            if(num <= 1){
+                return;
+            }
+            $('#showNum').text(Number(num-1));
+        },
+        addNum: function(){
+            var num = Number($('#showNum').text());
+            if(num >= 100){
+                return;
+            }
+            $('#showNum').text(Number(num+1));
+        },
+        forget:function(){
+            alert('忘记密码啦？o(∩_∩)o 哈哈');
+        },
+        register:function(){
+            alert('注册页面在哪里？在这里：404')
         }
+
     }
 
     var com = {
@@ -74,6 +107,16 @@ $(document).ready(function(){
             com.idToPage(i,config[i]);
         }
     }
+
+    //更多页面
+    $('#moreList > a').on('click',function(){
+        $('#moreList').find('a').each(function(){
+            $(this).removeClass('select');
+        })
+        $(this).addClass('select');
+        $(this).addClass('white');
+    });
+
 
     init();
 

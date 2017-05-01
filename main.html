@@ -24,23 +24,24 @@
     </div>
 </header>
 <section class="sec_con">
-    <div class="swiper-container swiper_height" style="height:10rem;">
+    <div class="swiper-container swiper_height" style="height:16rem;">
         <div class="swiper-wrapper">
             <div class="swiper-slide text-center pDetail"><img src="./images/index/banner.png" class="img-responsive" alt="Responsive image"></div>
             <div class="swiper-slide text-center pDetail"><img src="./images/index/banner.png" class="img-responsive" alt="Responsive image"></div>
             <div class="swiper-slide text-center pDetail"><img src="./images/index/banner.png" class="img-responsive" alt="Responsive image"></div>
         </div>
+        <!--<div class="swiper-pagination"></div>-->
     </div>
 
     <section class="tablist">
-        <div class="row">
+        <div class="row mt_5">
             <div class="col-xs-6 text-center" id="parkCar">
                 <div class="panel_list">
                     <div class="row">
                         <div class="col-xs-4 panel_list_img">
                             <img src="./images/index/P.jpg" class="img-responsive mt_5" alt="Responsive image">
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-8 no_pad_t">
                             <h4 class="text-center bold">找车位</h4>
                             <p class="text-center">轻松搞定停车</p>
                         </div>
@@ -53,7 +54,7 @@
                         <div class="col-xs-4 panel_list_img">
                             <img src="./images/index/yuyue_icon.jpg" class="img-responsive mt_5" alt="Responsive image">
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-8 no_pad_t">
                             <h4 class="text-center bold">预约代驾</h4>
                             <p class="text-center">不怕饭局喝酒</p>
                         </div>
@@ -68,7 +69,7 @@
                         <div class="col-xs-4 panel_list_img">
                             <img src="./images/index/youhui_icon.png" class="img-responsive mt_5" alt="Responsive image">
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-8 no_pad_t">
                             <h4 class="text-center bold">限时优惠</h4>
                             <p class="text-center">秒杀价折扣多</p>
                         </div>
@@ -81,7 +82,7 @@
                         <div class="col-xs-4 panel_list_img">
                             <img src="./images/index/more_icon.jpg" class="img-responsive mt_5" alt="Responsive image">
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-8 no_pad_t">
                             <h4 class="text-center bold">更多商品</h4>
                             <p class="text-center">发现品质生活</p>
                         </div>
@@ -102,30 +103,30 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
+        <div class="panel panel-default b_no_top" style="margin-bottom: 1rem;">
             <div class="panel-body">
                 <div class="row pDetail">
                     <div class="col-xs-6 text-left">
                         <img src="./images/index/xihuan_one.png" class="img-responsive" alt="Responsive image">
                         <h5 class="panel_name">亚利斯意大利餐厅</h5>
-                        <p>西餐 | 1楼A区 1018</p>
+                        <p class="gray">西餐 | 1楼A区 1018</p>
                     </div>
                     <div class="col-xs-6 text-left">
                         <img src="./images/index/xihuan_two.png" class="img-responsive" alt="Responsive image">
                         <h5 class="panel_name">米其林星享餐厅</h5>
-                        <p>西餐 | 3楼 B区 9090</p>
+                        <p class="gray">西餐 | 3楼 B区 9090</p>
                     </div>
                 </div>
                 <div class="row pDetail">
                     <div class="col-xs-6 text-left">
                         <img src="./images/index/xihuan_three.png" class="img-responsive" alt="Responsive image">
                         <h5 class="panel_name">怪兽大盘沙律</h5>
-                        <p>西餐 | 1楼A区 1018</p>
+                        <p class="gray">西餐 | 1楼A区 1018</p>
                     </div>
                     <div class="col-xs-6 text-left">
                         <img src="./images/index/xihuan_four.png" class="img-responsive" alt="Responsive image">
                         <h5 class="panel_name">米其林星享餐厅</h5>
-                        <p>西餐 | 3楼 B区 9090</p>
+                        <p class="gray">西餐 | 3楼 B区 9090</p>
                     </div>
                 </div>
             </div>
@@ -141,7 +142,8 @@
         <div class="row">
             <div class="col-xs-12" style="padding: 0px;">
                 <ul class="nav nav-pills tab_list">
-                    <li role="presentation"><a href="javascript:void(0);" class="active">综合排序↓</a></li>
+                    <!--<li role="presentation"><a href="javascript:void(0);" class="active">综合排序↓</a></li>-->
+                    <li role="presentation"><a href="javascript:void(0);">综合排序↓<i class="iconfont jiaobiao" style="visibility: hidden;">&#xe696;</i></a></li>
                     <li role="presentation"><a href="javascript:void(0);">销量最高<i class="iconfont jiaobiao">&#xe696;</i></a></li>
                     <li role="presentation"><a href="javascript:void(0);">餐厅评价<i class="iconfont jiaobiao">&#xe696;</i></a></li>
                     <li role="presentation"><a href="javascript:void(0);">促销优惠<i class="iconfont jiaobiao">&#xe696;</i></a></li>
@@ -274,7 +276,9 @@
 <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
-        autoplay: 5000,//可选选项，自动滑动
+        autoplay: 5000,     //可选选项，自动滑动
+        pagination: '.swiper-pagination',
+        paginationClickable: true
     })
 </script>
 <script src="./js/lgf.js"></script>

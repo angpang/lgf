@@ -63,6 +63,7 @@
 .red_car{
     border:red dotted 1px;
     background: url(../images/park/red_car.jpg) center 0.3rem no-repeat;
+    background-size: 70%;
 }
 .gray_car{
     border:#000 dotted 1px;
