@@ -10,3 +10,31 @@
 .login{
     margin:0 auto;
 }
+
+.name, .pwd{}
+
+.name{
+    width:100%;
+    padding-left:8rem;
+    height:4rem;
+    line-height:4rem;
+    background:url(../images/login/ren.png) 2rem 0.765rem no-repeat;
+    background-size:20%;
+}
+
+.pwd{
+    width:100%;
+    padding-left:8rem;
+    height:4rem;
+    line-height:4rem;
+    background:url(../images/login/lock.png) 2rem 0.765rem no-repeat;
+    background-size:20%;
+}
+.login_btn{
+    height:4rem;background-color:#ff3939;color:#fff
+}
+
+
+
+
+
