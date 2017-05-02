@@ -67,6 +67,13 @@ img{
 .ml_5{
     margin-left:0.5rem;
 }
+.mb_2{
+    margin-bottom: 0.2rem !important;
+}
+.mb_5{
+    margin-bottom: 0.5rem !important;
+}
+
 
 .f_8{
     font-size:0.8rem;
@@ -84,6 +91,13 @@ img{
 }
 .pad_1_5{
     padding-left:1.5rem;
+}
+.pad_a5{
+    padding-top:0.5rem !important;
+    padding-bottom:0.5rem !important;
+}
+.pad_t5{
+    padding-top:0.5rem !important;
 }
 
 .bold{
@@ -162,7 +176,7 @@ body{
 header{
     background: #fff;
     width:100%;
-    line-height:2rem;
+    line-height:2.2rem;
     position: fixed;
     top:0px;
     left:0px;
