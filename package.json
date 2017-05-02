@@ -1,0 +1,33 @@
+{
+  "name": "lgf",
+  "version": "1.0.0",
+  "description": "demo 页面",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angpang/lgf"
+  },
+  "keywords": [
+    "lgf"
+  ],
+  "author": "angpang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angpang/lgf/issues"
+  },
+  "homepage": "https://github.com/angpang/lgf",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.1.2",
+    "http-server": "^0.10.0",
+    "run-sequence": "^1.2.2"
+  }
+}

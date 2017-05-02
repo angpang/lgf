@@ -7,6 +7,7 @@ $(document).ready(function(){
         '#back':'cb:back',
         '#loginBtn':'main',
         '#my':'my',
+        '#main':'main',
         '#search':'search',
         '#parkCar':'park_car',
         '#reserved':'reserved_no_input',

@@ -19,7 +19,7 @@
 }
 .title{
     border-bottom:#e6e6e6 solid 1px;
-    height:3.6rem;
+    height:3.2rem;
 }
 .huan{
     border-radius: 1rem;
@@ -123,4 +123,13 @@
 .panel_name{
     color:#000;
     font-size:1.7rem;
+}
+.tablist p{
+    line-height:1.6rem;
+    padding:0px !important;
+    margin:0px !important;
+}
+.tablist .imgpos{
+    margin-left: 1rem;
+    margin-top: 0.8rem;
 }
